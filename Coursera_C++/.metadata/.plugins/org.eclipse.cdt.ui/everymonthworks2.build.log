@@ -1,0 +1,11 @@
+19:56:35 **** Rebuild of configuration Debug for project everymonthworks2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\everymonthworks2.o" "..\\src\\everymonthworks2.cpp" 
+..\src\everymonthworks2.cpp: In function 'void Next_month(int&, const std::vector<int>&, std::vector<std::vector<std::__cxx11::basic_string<char> > >&)':
+..\src\everymonthworks2.cpp:14:15: warning: statement has no effect [-Wunused-value]
+         for (b; a > b; b++) { //перебираем все дни, которые не влезли с прошлого месяца
+               ^
+g++ -o everymonthworks2.exe "src\\everymonthworks2.o" 
+
+19:56:37 Build Finished. 0 errors, 1 warnings. (took 1s.900ms)
+

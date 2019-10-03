@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+int main()
+{
+    string a1[] = {"Hello world i am test programm"};
+
+    for(int a = 0; a<a1.size(); ++a)
+    {
+    if(a1[a] != ' ')printf("%c", a1[a]);
+    }
+
+    return 0;
+}

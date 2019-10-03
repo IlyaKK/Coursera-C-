@@ -1,0 +1,45 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+vector<string> PalindromFilter(vector<string> words,int minLength){
+	vector<string> palindroms;
+	for(auto n:words){
+		if(IsPalindrom(n)==1 && n.size() >= minLength){
+			palindroms.push_back(n);
+		}
+	}
+	return palindroms;
+}
+
+bool IsPalindrom(string n){
+	if(n.size()==0){
+		return true;
+	}
+	for(size_t i=0; i < n.size(); ++i){
+		if(n[i] == 'A' || n[i] == 'B' || n[i] == 'C' || n[i] == 'D' || n[i] == 'E' || n[i] == 'F' || n[i] == 'G' || n[i] == 'H' || n[i] == 'I' || n[i] == 'J' || n[i] == 'K' || n[i] == 'L' || n[i] == 'M' || n[i] == 'N' || n[i] == 'O' || n[i] == 'P' || n[i] == 'Q' || n[i] == 'R' || n[i] == 'S' || n[i] == 'T' || n[i] == 'U' || n[i] == 'V' || n[i] == 'W' || n[i] == 'X' || n[i] == 'W' || n[i] == 'Z'){
+			n[i]=n[i] - 'A' + 'a';
+		}
+	}
+	for (size_t i = 0; i < n.size() / 2; ++i) {
+	        if (n[i] != n[n.size() - i - 1]) {
+	            return false;
+	        }
+	    }
+	return true;
+}
+
+
+int main() {
+/*    string words;
+    int minLength;
+    minLength = 5;*/
+	for(string t:PalindromFilter({"code","aba","weew"}, 5)){
+	   cout<<t<<" ";
+	}
+	/*for(size_t u=0; u < (PalindromFilter({"bro","abacaba","aba"}, 5)).size(); ++u ){
+    cout << (PalindromFilter({"bro","abacaba","aba"}, 5))[u];
+	}*/
+	return 0;
+}

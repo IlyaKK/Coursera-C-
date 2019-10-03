@@ -1,0 +1,7 @@
+20:40:27 **** Incremental Build of configuration Debug for project invertible_function_with_mult_without_main ****
+Info: Internal Builder is used for build
+g++ -o invertible_function_with_mult_without_main.exe "src\\invertible_function_with_mult_without_main.o" 
+Command canceled
+
+20:40:27 Build Finished. 0 errors, 0 warnings. (took 306ms)
+

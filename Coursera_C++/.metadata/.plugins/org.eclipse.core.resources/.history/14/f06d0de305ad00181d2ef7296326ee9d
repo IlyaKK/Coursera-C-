@@ -1,0 +1,41 @@
+#include <vector>
+#include <iostream>
+#include <string>
+using namespace std;
+void peopleQueue() {
+	vector<bool> queue(0);
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		string command;
+		cin >> command;
+		if (command == "COME") {
+			int number;
+			cin >> number;
+			queue.resize(queue.size() + number);
+		} else if (command == "WORRY") {
+			int number;
+			cin >> number;
+			queue[number] = true;
+		} else if (command == "QUIET") {
+			int number;
+			cin >> number;
+			queue[number] = false;
+		} else if (command == "WORRY_COUNT") {
+			int count = 0;
+			for (bool worried : queue) {
+				if (worried) {
+					count++;
+				}
+			}
+			cout << count << endl;
+		} else {
+			cout << "Unknown operation" << endl;
+		}		for (bool worried : queue) {
+			cout << worried << " ";
+		}		cout << endl;
+	}}
+int main() {
+		peopleQueue();
+		return 0;
+}

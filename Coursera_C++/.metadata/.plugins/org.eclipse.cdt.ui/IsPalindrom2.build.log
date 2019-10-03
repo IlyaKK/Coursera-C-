@@ -1,0 +1,30 @@
+15:02:49 **** Incremental Build of configuration Debug for project IsPalindrom2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\IsPalindrom2.o" "..\\src\\IsPalindrom2.cpp" 
+..\src\IsPalindrom2.cpp: In function 'int main()':
+..\src\IsPalindrom2.cpp:4:2: error: 'string' was not declared in this scope
+  string b;
+  ^~~~~~
+..\src\IsPalindrom2.cpp:4:2: note: suggested alternative:
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\IsPalindrom2.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:74:33: note:   'std::__cxx11::string'
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+..\src\IsPalindrom2.cpp:5:2: error: 'cin' was not declared in this scope
+  cin >> b;
+  ^~~
+..\src\IsPalindrom2.cpp:5:2: note: suggested alternative:
+In file included from ..\src\IsPalindrom2.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:60:18: note:   'std::cin'
+   extern istream cin;  /// Linked to standard input
+                  ^~~
+..\src\IsPalindrom2.cpp:5:9: error: 'b' was not declared in this scope
+  cin >> b;
+         ^
+
+15:02:50 Build Failed. 3 errors, 0 warnings. (took 886ms)
+

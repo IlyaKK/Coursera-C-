@@ -1,0 +1,4 @@
+#Mon Nov 05 17:14:50 MSK 2018
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=getline

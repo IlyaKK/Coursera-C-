@@ -1,0 +1,7 @@
+20:29:49 **** Rebuild of configuration Debug for project separate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\separate.o" "..\\src\\separate.cpp" 
+g++ -o separate.exe "src\\separate.o" 
+
+20:29:50 Build Finished. 0 errors, 0 warnings. (took 1s.43ms)
+

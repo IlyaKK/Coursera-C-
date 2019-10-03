@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+int main()
+{
+    string a1;
+    cin>>a1;
+    for(int a = 0; a<a1.size(); ++a)
+    {
+    if(a1[a] != ' '){
+    	a1[a]=a1[a];
+    }
+    }
+
+    return 0;
+}

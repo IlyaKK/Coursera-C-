@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    char a1[] = "Hello world i am test programm\0";
+
+    for(int a = 0; a1[a]; ++a)
+    {
+    if(a1[a] != ' ')printf("%c", a1[a]);
+    }
+
+    return 0;
+}

@@ -1,0 +1,7 @@
+20:29:42 **** Rebuild of configuration Debug for project names3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\names3.o" "..\\src\\names3.cpp" 
+g++ -o names3.exe "src\\names3.o" 
+
+20:29:43 Build Finished. 0 errors, 0 warnings. (took 1s.685ms)
+

@@ -1,0 +1,7 @@
+20:29:55 **** Rebuild of configuration Debug for project sum ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sum.o" "..\\src\\sum.cpp" 
+g++ -o sum.exe "src\\sum.o" 
+
+20:29:56 Build Finished. 0 errors, 0 warnings. (took 1s.182ms)
+

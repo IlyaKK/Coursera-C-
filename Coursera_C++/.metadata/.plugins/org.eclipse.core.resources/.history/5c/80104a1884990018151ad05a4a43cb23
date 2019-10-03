@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	int a,i;
+	cin >> a;
+	vector<int> v;
+	vector<int> x;
+	i=0;
+	x[0] = a/2;
+	v[0] = a-2*x[0];
+	while(v[i] != 0){
+		x[i+1]=x[i]/2;
+		v[i+1]=x[i]-2*x[i+1];
+		cout << v[i];
+		i++;
+	}
+	return 0;
+}

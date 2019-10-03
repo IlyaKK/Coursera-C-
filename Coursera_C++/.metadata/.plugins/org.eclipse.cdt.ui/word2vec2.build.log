@@ -1,0 +1,109 @@
+20:46:40 **** Rebuild of configuration Debug for project word2vec2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\word2vec2.o" "..\\src\\word2vec2.cpp" 
+..\src\word2vec2.cpp:53:1: error: 'clock_t' does not name a type; did you mean 'clockid_t'?
+ clock_t start;
+ ^~~~~~~
+ clockid_t
+..\src\word2vec2.cpp: In function 'void LearnVocabFromTrainFile()':
+..\src\word2vec2.cpp:286:14: warning: unknown conversion type character 'l' in format [-Wformat=]
+       printf("%lldK%c", train_words / 1000, 13);
+              ^~~~~~~~~
+..\src\word2vec2.cpp:286:14: warning: format '%c' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+..\src\word2vec2.cpp:286:14: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:286:14: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:286:14: warning: format '%c' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+..\src\word2vec2.cpp:286:14: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:298:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+     printf("Vocab size: %lld\n", vocab_size);
+            ^~~~~~~~~~~~~~~~~~~~
+..\src\word2vec2.cpp:298:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:298:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:298:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:299:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+     printf("Words in train file: %lld\n", train_words);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\word2vec2.cpp:299:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:299:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:299:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp: In function 'void SaveVocab()':
+..\src\word2vec2.cpp:308:48: warning: unknown conversion type character 'l' in format [-Wformat=]
+   for (i = 0; i < vocab_size; i++) fprintf(fo, "%s %lld\n", vocab[i].word, vocab[i].cn);
+                                                ^~~~~~~~~~~
+..\src\word2vec2.cpp:308:48: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:308:48: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:308:48: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp: In function 'void ReadVocab()':
+..\src\word2vec2.cpp:327:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+     fscanf(fin, "%lld%c", &vocab[a].cn, &c);
+                 ^~~~~~~~
+..\src\word2vec2.cpp:327:17: warning: format '%c' expects argument of type 'char*', but argument 3 has type 'long long int*' [-Wformat=]
+..\src\word2vec2.cpp:327:17: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:327:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:327:17: warning: format '%c' expects argument of type 'char*', but argument 3 has type 'long long int*' [-Wformat=]
+..\src\word2vec2.cpp:327:17: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:332:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+     printf("Vocab size: %lld\n", vocab_size);
+            ^~~~~~~~~~~~~~~~~~~~
+..\src\word2vec2.cpp:332:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:332:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:332:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:333:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+     printf("Words in train file: %lld\n", train_words);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\word2vec2.cpp:333:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:333:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:333:12: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp: In function 'void* TrainModelThread(void*)':
+..\src\word2vec2.cpp:390:3: error: 'clock_t' was not declared in this scope
+   clock_t now;
+   ^~~~~~~
+..\src\word2vec2.cpp:390:3: note: suggested alternative: 'clockid_t'
+   clock_t now;
+   ^~~~~~~
+   clockid_t
+..\src\word2vec2.cpp:400:9: error: 'now' was not declared in this scope
+         now=clock();
+         ^~~
+..\src\word2vec2.cpp:400:9: note: suggested alternative: 'pow'
+         now=clock();
+         ^~~
+         pow
+..\src\word2vec2.cpp:400:13: error: 'clock' was not declared in this scope
+         now=clock();
+             ^~~~~
+..\src\word2vec2.cpp:403:44: error: 'start' was not declared in this scope
+          word_count_actual / ((real)(now - start + 1) / (real)CLOCKS_PER_SEC * 1000));
+                                            ^~~~~
+..\src\word2vec2.cpp:403:44: note: suggested alternative: 'sqrt'
+          word_count_actual / ((real)(now - start + 1) / (real)CLOCKS_PER_SEC * 1000));
+                                            ^~~~~
+                                            sqrt
+..\src\word2vec2.cpp:403:63: error: 'CLOCKS_PER_SEC' was not declared in this scope
+          word_count_actual / ((real)(now - start + 1) / (real)CLOCKS_PER_SEC * 1000));
+                                                               ^~~~~~~~~~~~~~
+..\src\word2vec2.cpp:568:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+..\src\word2vec2.cpp: In function 'void TrainModel()':
+..\src\word2vec2.cpp:587:3: error: 'start' was not declared in this scope
+   start = clock();
+   ^~~~~
+..\src\word2vec2.cpp:587:3: note: suggested alternative: 'sqrt'
+   start = clock();
+   ^~~~~
+   sqrt
+..\src\word2vec2.cpp:587:11: error: 'clock' was not declared in this scope
+   start = clock();
+           ^~~~~
+..\src\word2vec2.cpp:608:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+     fprintf(fo, "%lld %lld\n", vocab_size, layer1_size);
+                 ^~~~~~~~~~~~~
+..\src\word2vec2.cpp:608:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:608:17: warning: too many arguments for format [-Wformat-extra-args]
+..\src\word2vec2.cpp:608:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:608:17: warning: unknown conversion type character 'l' in format [-Wformat=]
+..\src\word2vec2.cpp:608:17: warning: too many arguments for format [-Wformat-extra-args]
+
+20:46:42 Build Failed. 8 errors, 39 warnings. (took 2s.109ms)
+
